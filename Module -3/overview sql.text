@@ -1,0 +1,23 @@
+1. What is SQL?
+SQL stands for Structured Query Language.
+
+SQL is a standard language used to communicate with relational database management systems (RDBMS).
+
+It allows users to:
+- Create databases and tables.
+- Insert records into tables.
+- Retrieve stored information.
+- Update existing records.
+- Delete records.
+- Control access to database information.
+
+
+
+
+Student_ID	Name	Department
+101	Rahul	Computer Science
+102	Anu	Mathematics
+103	John	Computer Science
+
+If we want to retrieve all student records, we can write:
+SELECT * FROM Student;
