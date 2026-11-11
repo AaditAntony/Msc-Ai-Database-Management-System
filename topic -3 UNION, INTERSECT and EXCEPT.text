@@ -90,3 +90,17 @@ What happened?
 - Binu and Chris are in both, so they are returned.
 Remember
  INTERSECT = only common rows.
+
+ Important: The order matters. If you reverse the two queries, the result will be David instead of Arun.
+
+
+ 8. Exam-ready answer (5 marks)
+Question: Explain UNION, INTERSECT and EXCEPT operations in SQL.
+
+SQL provides set operations to combine and compare the results of multiple SELECT statements.
+1. UNION: Combines the results of two or more queries and eliminates duplicate rows.
+2. INTERSECT: Returns only the rows that are common to the results of both queries.
+3. EXCEPT: Returns rows from the first query that are not present in the second query.
+The queries used in set operations must return the same number of columns, with compatible data types in corresponding positions.
+
+These operations help retrieve combined, common and differing records from database query results.
