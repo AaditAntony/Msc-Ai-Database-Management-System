@@ -149,3 +149,58 @@ Example: Retrieve the first three student records.
 SELECT *
 FROM Student
 LIMIT 3;
+
+8. Complete query structure
+You can combine these clauses in a single query.
+SELECT Name, Marks
+FROM Student
+WHERE Marks > 70
+ORDER BY Marks DESC
+LIMIT 3;
+
+
+Understand the execution:
+1. FROM – Selects the Student table.
+2. WHERE – Filters students with marks greater than 70.
+3. SELECT – Returns Name and Marks.
+4. ORDER BY – Arranges the results from highest to lowest marks.
+5. LIMIT – Returns only the first three rows.
+Important SQL query order
+SELECT
+FROM
+WHERE
+ORDER BY
+LIMIT
+This is a simplified logical explanation, not the actual internal execution order of every SQL engine.
+
+
+Exam-ready notes
+Question: Explain the basic SQL query structure.
+
+SQL queries are used to retrieve and manipulate data stored in relational database tables. The SELECT statement is used to retrieve data, while the FROM clause specifies the source table. The WHERE clause filters records based on conditions. DISTINCT eliminates duplicate values, and ORDER BY arranges the query results in ascending or descending order. The LIMIT clause restricts the number of returned rows in MySQL.
+
+The general syntax is:
+SELECT column_name
+FROM table_name
+WHERE condition
+ORDER BY column_name ASC;
+
+
+
+Quick revision
+SQL component	Purpose
+SELECT	Retrieve columns
+FROM	Specify table
+WHERE	Filter records
+AND / OR / NOT	Combine or reverse conditions
+DISTINCT	Remove duplicates
+ORDER BY	Sort records
+LIMIT	Restrict returned rows
+
+What you should remember
+- SELECT * means all columns.
+- WHERE filters records.
+- DISTINCT removes duplicate results.
+- ASC means ascending.
+- DESC means descending.
+- LIMIT restricts the number of returned rows.
