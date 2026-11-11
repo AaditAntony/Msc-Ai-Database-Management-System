@@ -1,0 +1,92 @@
+Module III – Topic 3: UNION, INTERSECT and EXCEPT
+
+These are SQL set operations. They allow us to combine or compare the results returned by two or more SELECT queries.
+
+
+Student_ID	Name
+        1	Arun
+        2	Binu
+        3	Chris
+
+Query B – Students enrolled in Python
+Student_ID	Name
+        2	Binu
+        3	Chris
+        4	David
+
+
+2. UNION
+Definition: UNION combines the results of two or more SELECT statements and removes duplicate rows.
+
+SELECT column_name FROM table1
+UNION
+SELECT column_name FROM table2;
+
+
+SELECT Student_ID, Name
+FROM Java_Students
+
+UNION
+
+SELECT Student_ID, Name
+FROM Python_Students;
+
+Result:
+Student_ID	Name
+        1	Arun
+        2	Binu
+        3	Chris
+        4	David
+
+
+UNION ALL – useful distinction
+UNION ALL also combines results, but it does not remove duplicates.
+SELECT Student_ID, Name
+FROM Java_Students
+
+
+
+UNION ALL  ----> speical varient of uion   heading
+
+SELECT Student_ID, Name
+FROM Python_Students;
+
+
+The result contains six rows because Binu and Chris appear twice.
+
+UNION ALL is useful when duplicate rows must be retained. It is a supporting distinction to know alongside UNION.
+
+
+
+
+
+3. INTERSECT  -----> heading
+Definition: INTERSECT returns only the rows that are common to both query results.
+
+Syntax:
+SELECT column_name FROM table1
+INTERSECT
+SELECT column_name FROM table2;
+
+
+Example:
+SELECT Student_ID, Name
+FROM Java_Students
+
+INTERSECT
+
+SELECT Student_ID, Name
+FROM Python_Students;
+
+
+Result:
+Student_ID	Name
+2	Binu
+3	Chris
+
+What happened?
+- Arun is only in Java, so he is excluded.
+- David is only in Python, so he is excluded.
+- Binu and Chris are in both, so they are returned.
+Remember
+ INTERSECT = only common rows.
