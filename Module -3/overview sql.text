@@ -1,4 +1,4 @@
-1. What is SQL?
+1. What is SQL?  ---> heading
 SQL stands for Structured Query Language.
 
 SQL is a standard language used to communicate with relational database management systems (RDBMS).
@@ -21,3 +21,50 @@ Student_ID	Name	Department
 
 If we want to retrieve all student records, we can write:
 SELECT * FROM Student;
+
+
+2. Characteristics of SQL  ---> heading
+
+The important characteristics are:
+1. Simple language: SQL uses understandable commands.
+2. Declarative language: Users specify what data they need rather than describing every step to retrieve it.
+3. Standardised language: SQL has standards that support different relational database systems.
+4. Data manipulation: It supports inserting, updating, deleting and retrieving records.
+5. Data definition: It allows users to create and modify database structures.
+6. Integrity and security: It supports constraints and access control.
+
+
+
+
+3. Categories of SQL Commands   ----> heading
+SQL commands are commonly classified into five categories.
+SQL command classification
+DDL – Data Definition Language
+
+Used to define and modify database structures.
+
+Commands: CREATE, ALTER, DROP, TRUNCATE.
+
+DML – Data Manipulation Language
+
+Used to modify data stored in tables.
+
+Commands: INSERT, UPDATE, DELETE.
+
+DQL – Data Query Language
+
+Used to retrieve data.
+
+Command: SELECT.
+
+DCL – Data Control Language
+
+Used to control database access and permissions.
+
+Commands: GRANT, REVOKE.
+
+TCL – Transaction Control Language
+
+Used to manage database transactions.
+
+Commands: COMMIT, ROLLBACK, SAVEPOINT.
