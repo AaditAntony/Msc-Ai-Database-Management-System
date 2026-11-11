@@ -1,0 +1,25 @@
+Topic 2 – Basic Queries in SQL
+
+1. What is an SQL query?
+An SQL query is an instruction given to a database to retrieve or manipulate information.
+
+For example, suppose a college has a table named Student.
+
+STUDENT table
+Student_ID  	Name	Department	Age	Marks
+101          	Rahul	CS	        22	85
+102          	Anu	   Maths	    23	90
+103	            John	CS      	21	75
+104          	Maria	Commerce	22	88
+105	            David	Maths	    24	65
+
+
+
+2. SELECT statement
+
+it is used to retrive the data from the database
+
+SELECT column_name
+FROM table_name;
+
+to retrie multiple columns
