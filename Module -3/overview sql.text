@@ -68,3 +68,61 @@ TCL – Transaction Control Language
 Used to manage database transactions.
 
 Commands: COMMIT, ROLLBACK, SAVEPOINT.
+
+
+
+
+
+4. Difference between SQL and MySQL
+This is a useful supporting distinction.
+SQL	MySQL
+SQL is a query language.	MySQL is a relational database management system.
+Used to communicate with databases.	Used to store and manage databases.
+It is a language.	It is database software.
+
+For example, SELECT * FROM Student; is SQL, while MySQL is one system that can execute that query.
+
+
+5. Advantages of SQL
+- Easy to learn and use.
+- Efficient data retrieval.
+- Supports large amounts of structured data.
+- Provides data security and integrity features.
+- Supports multiple users.
+- Allows database structure and data manipulation.
+
+
+
+
+Exam-ready answer: Overview of SQL (5 marks)
+Question: Explain SQL and its characteristics.
+
+Answer:
+
+SQL (Structured Query Language) is a standard language used to communicate with relational database management systems. It is used to create, retrieve, insert, update and delete data stored in relational databases.
+
+The important characteristics of SQL are:
+1. SQL is a simple and user-friendly language.
+2. It is a declarative language that specifies what data is required.
+3. It supports database creation and modification.
+4. It provides commands for inserting, updating, deleting and retrieving data.
+5. It supports data integrity and security.
+6. It is widely used in relational database management systems.
+SQL commands are classified into DDL, DML, DQL, DCL and TCL.
+
+Thus, SQL provides an effective way to manage and manipulate relational databases.
+
+
+
+
+Quick revision card
+Remember these five points
+- SQL = Structured Query Language.
+- SQL communicates with relational databases.
+- DDL = Defines database structure.
+- DML = Modifies stored data.
+- DQL = Retrieves data.
+
+One-line memory trick
+
+DDL – Structure | DML – Modify | DQL – Retrieve | DCL – Permissions | TCL – Transactions
